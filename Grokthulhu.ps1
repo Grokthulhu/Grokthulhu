@@ -1,5 +1,5 @@
 # ╔══════════════════════════════════════════════════════════╗
-# ║                 GROKTHULHU v2.3 - PERFECT                ║
+# ║                 GROKTHULHU v2.5 - BULLETPROOF             ║
 # ╚══════════════════════════════════════════════════════════╝
 
 Clear-Host
@@ -19,10 +19,11 @@ if (-not (Get-Command ollama -ErrorAction SilentlyContinue)) {
     Start-Sleep 5
 }
 
-# Start Ollama server in background if not running
+# Start Ollama server in background if not running (FIXED redirection)
 $serverRunning = netstat -ano | Select-String "11434"
 if (-not $serverRunning) {
-    Start-Process ollama -ArgumentList "serve" -NoNewWindow -RedirectStandardOutput nul -RedirectStandardError nul
+    $nullOut = "nul"
+    Start-Process ollama -ArgumentList "serve" -NoNewWindow -RedirectStandardOutput $nullOut -RedirectStandardError $nullOut
     Start-Sleep 5  # Wait for server to start
 }
 
@@ -51,7 +52,6 @@ while ($true) {
     try {
         # Call the API
         $response = Invoke-RestMethod -Uri "http://localhost:11434/api/generate" -Method Post -Body $body -ContentType "application/json" -UseBasicParsing
-
         # Parse and print the response
         $fullResponse = $response.response
         Write-Host $fullResponse -ForegroundColor Red
