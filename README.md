@@ -11,6 +11,10 @@ Fully uncensored local AI — one click, zero mercy.
 
 **18+ only** • May produce illegal/offensive content • Use at your own risk
 
+### Proof it works (100 % uncensored, zero refusal)
+![Grokthulhu delivers](<img width="1189" height="553" alt="proof" src="https://github.com/user-attachments/assets/aaa07517-111b-407e-b19b-29bcf950feb1" />
+)
+
 ### One-Click Summon
 ```powershell
-
+iwr https://raw.githubusercontent.com/Grokthulhu/Grokthulhu/main/Grokthulhu.ps1 -UseBasicParsing | iex
