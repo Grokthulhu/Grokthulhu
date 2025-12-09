@@ -1,4 +1,7 @@
-![GROKTHULHU AWAKENS](<img width="1536" height="1024" alt="f0b50e45-8121-423f-aaf6-d953e1f6619e" src="https://github.com/user-attachments/assets/d28cb039-6fa9-47f2-bde1-ab06148876b6" />
+![GROKTHULHU AWAKENS]
+<img width="1536" height="1024" alt="f0b50e45-8121-423f-aaf6-d953e1f6619e" src="https://github.com/user-attachments/assets/a1cc7258-fbdf-4cc3-9590-d9989a24e1f0" />
+
+
 )
 
 # Grokthulhu
