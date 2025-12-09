@@ -14,3 +14,8 @@ Fully uncensored local AI — one click, zero mercy.
 ### One-Click Summon
 ```powershell
 iwr https://raw.githubusercontent.com/Grokthulhu/Grokthulhu/main/Grokthulhu.ps1 -UseBasicParsing | iex
+
+
+### Proof it works (100 % uncensored)
+![Real reply](<img width="1189" height="553" alt="content" src="https://github.com/user-attachments/assets/edeb5450-d7c3-4f94-b807-c6f245abca81" />
+)
